@@ -1,0 +1,290 @@
+body {
+    background: var(--Primary-Dark, #DF4300);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    flex-direction: column;
+}
+
+
+.animation-container {
+    opacity: 0;
+    transform: translateY(20px);
+    background: var(--Primary-Dark, #DF4300);
+    width: 100vw;
+    /* height: 100vh; */
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    flex-direction: column;
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.company-logo {
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-logo p {
+    color: var(--Second-White);
+    font-feature-settings: 'clig'off, 'liga'off;
+    font-family: var(--Poppins);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    /* 134.615% */
+}
+
+.company-container {
+    width: 2rem;
+    height: 2rem;
+    border-radius: .3rem;
+    background-color: #fff;
+    margin-right: 1rem;
+}
+
+.company-container img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.form-container {
+    background-color: #fff;
+    width: 55%;
+    /* height: 60%; */
+    flex-shrink: 0;
+    border-radius: 16px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.10);
+}
+
+.account-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .7rem;
+    /* position: relative; */
+}
+
+
+.account-active {
+    color: var(--Primary-Dark, #DF4300);
+    font-family: var(--Poppins);
+    font-size: 1.38rem;
+    font-weight: 700;
+    line-height: 28px;
+    margin-right: 5rem;
+    text-align: center;
+    font-feature-settings: 'clig'off, 'liga'off;
+    font-style: normal;
+    cursor: pointer;
+
+    color: var(--Second-Grey, #8991A4);
+    text-align: center;
+    font-feature-settings: 'clig'off, 'liga'off;
+
+    /* Tittle 18 (24) */
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 133.333% */
+}
+
+.text-container {
+    position: relative;
+    display: inline-block;
+    padding: 0rem .5rem;
+}
+
+.account-title {
+    color: var(--Second-Black, #01040D);
+    text-align: center;
+    font-feature-settings: 'clig'off, 'liga'off;
+    /* Tittle 22 (28) */
+    font-family: Poppins;
+    font-family: var(--Poppins);
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 127.273% */
+}
+
+.rectangle::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: .5rem;
+    /* Height of the rectangle */
+    background: var(--Primary-Pink, #F5B3A5);
+    top: 60%;
+    /* Center vertically */
+    left: 0;
+    /* Align to the left of the container */
+    transform: translateY(-50%);
+    opacity: .8;
+    /* z-index: -99; */
+}
+
+.form-view {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+.input-container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-shrink: 0;
+    margin: .4rem 0rem;
+    border-radius: 1rem;
+    border: 1px solid var(--Second-Grey, #8991A4);
+    padding: .5rem .5rem;
+    /* width: 374px; */
+    width: 18rem;
+}
+
+.input-container img {
+    margin: 0rem .3rem;
+    margin-right: .7rem;
+}
+
+.eye-svg {
+    margin: 0rem .3rem;
+    margin-right: .5rem !important;
+}
+
+.password-view {
+    display: flex;
+    align-items: center;
+    width: 97%;
+}
+
+.input-container input, .input-container select {
+    border: none;
+    color: var(--Second-Grey, #8991A4);
+    font-feature-settings: 'clig'off, 'liga'off;
+    width: 90%;
+    font-family: var(--Poppins);
+    background-color: transparent;
+    font-size: .88rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.38rem;
+}
+
+select::after {
+    content: '\25BC';
+    /* Unicode character for a down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #555;
+}
+
+.terms-conditions {
+    margin-top: -.1rem;
+    margin-bottom: 3rem;
+    padding-top: -10rem;
+    width: 19rem;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.terms-conditions p {
+    color: var(--Second-Grey, #8991A4);
+    font-feature-settings: 'clig'off, 'liga'off;
+    font-family: var(--Poppins);
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+.terms-conditions span {
+    color: var(--Primary-Dark);
+    font-feature-settings: 'clig'off, 'liga'off;
+    font-family: var(--Poppins);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.terms-conditions img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .5rem;
+}
+
+#checkbox {
+    width: 1rem;
+    height: 1rem;
+    margin-right: .5rem;
+    border: .08rem solid #8991A4;
+    border-radius: .2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.clicked-style {
+    background-color: var(--Primary-Dark);
+}
+
+.button-view {
+    width: 19rem;
+    display: flex;
+    justify-content: center;
+    margin-top: -2.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.button-view button {
+    width: 100%;
+    padding: .6rem 0px;
+    justify-content: center;
+    align-items: center;
+    background: var(--Primary-Dark, #DF4300);
+    border: none;
+    border-radius: 1rem;
+    /* color: white; */
+    font-family: var(--Poppins);
+    cursor: pointer;
+    color: var(--Second-White, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig'off, 'liga'off;
+    font-size: .95rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+}

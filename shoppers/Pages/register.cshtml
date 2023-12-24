@@ -1,0 +1,83 @@
+﻿@page
+@model shoppers.Pages.registerModel
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./root.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <title>Shopper Commerce | Register</title>
+</head>
+    <div class="animation-container">
+        <div class="company-logo">
+            <div class="company-container">
+                <img src="./svg/Logo.svg" />
+            </div>
+            <p>Shopper</p>
+        </div>
+        <div class="form-container">
+            <div class="account-section">
+                <!-- <p class="account-active">Sign in</p> -->
+                <p class="account-active"><a href="/login">Sign in</a></p>
+                <div class="text-container">
+                    <span class="rectangle"></span>
+                    <p class="account-title">Register</a></p>
+                </div>
+            </div>
+            <div class="form-view">
+                <EditForm Model="" OnValidSubmit="">    
+                    <DataAnnotationsValidator/>
+                    <ValidationSummary/>
+                <div class="input-container">
+                    <img src="./svg/email.svg" />
+                    <input class="form-control" placeholder="Email" name="email" type="email" />
+                 @*   &nbsp;<ValidationMessage For="@(()=>)"/>*@
+                </div>
+                <div class="input-container">
+                    <img src="./svg/Phone.svg" />
+                    <input placeholder="Phone Number" name="phone" type="tel" />
+                     @*   &nbsp;<ValidationMessage For="@(()=>)"/>*@
+                </div>
+                <div class="input-container">
+                    <img src="./svg/united-states.svg" />
+                    <select name="country">
+                        <option value="0">Select Country</option>
+                        <option value="1">United State</option>
+                        <!-- <option value="2">Nigeria</option> -->
+                         @*   &nbsp;<ValidationMessage For="@(()=>)"/>*@
+                    </select>
+                </div>
+                <div class="input-container">
+                    <div class="password-view">
+                        <img src="./svg/password.svg" />
+                        <input placeholder="Password" name="password" type="password" />
+                         @*   &nbsp;<ValidationMessage For="@(()=>)"/>*@
+                    </div>
+                    <img src="./svg/eye.svg" class="eye-svg" />
+                </div>
+                <div class="terms-conditions">
+                    <div id="checkbox" onclick="toggleClass()">
+                    </div>
+                    <p class="terms-policy-text">I accepted <span>Terms & Privacy Policy</span></p>
+                </div>
+                <div class="button-view">
+                    <button type="submit">Register</button>
+                </div>
+            </div>
+           </EditForm>
+        </div>
+    </div>
+
+    <script>
+        function toggleClass() {
+            <!-- const element = document.getElementById("terms"); -->
+            const element = document.getElementById("checkbox");
+            element.classList.toggle("clicked-style");
+        }
+    </script>
+
+
+</html>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\svg\Check-Empty.svg" />
+    <None Include="wwwroot\svg\email.svg" />
+    <None Include="wwwroot\svg\eye.svg" />
+    <None Include="wwwroot\svg\facebook.svg" />
+    <None Include="wwwroot\svg\Logo.svg" />
+    <None Include="wwwroot\svg\mail.svg" />
+    <None Include="wwwroot\svg\password.svg" />
+    <None Include="wwwroot\svg\Phone.svg" />
+    <None Include="wwwroot\svg\twitter.svg" />
+    <None Include="wwwroot\svg\united-states.svg" />
+  </ItemGroup>
+
+</Project>

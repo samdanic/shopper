@@ -1,0 +1,76 @@
+﻿@page
+@model shoppers.Pages.loginModel
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Shopper Commerce</title>
+</head>
+<html>
+    <div class="animation-container">
+        <div class="company-logo">
+            <div class="company-container">
+                <img src="./svg/Logo.svg" />
+            </div>
+            <p>Shopper</p>
+        </div>
+        <div class="form-container">
+            <div class="account-section">
+                <div class="text-container">
+                    <span class="rectangle"></span>
+                    <p class="account-active">Sign in</p>
+                </div>
+                <p class="account-title"><a href="/register">Register</a></p>
+            </div>
+        <EditForm Model="">   
+            <DataAnnotationsValidator/>
+                    <ValidationSummary/>
+            <div class="form-view">
+                <div class="input-container">
+                    <img src="./svg/email.svg" />
+                    <input placeholder="Email" name="email" type="email"/>
+                     @*   &nbsp;<ValidationMessage For="@(()=>)"/>*@
+                </div>
+                <div class="input-container">
+                    <div class="password-view">
+                        <img src="./svg/password.svg" />
+                        <input placeholder="Password" name="password" type="password" />
+                         @*   &nbsp;<ValidationMessage For="@(()=>)"/>*@
+                    </div>
+                    <img src="./svg/eye.svg" class="eye-svg" />
+                </div>
+                <div class="forgot-container">
+                    <p class="forgot-password">Forgot password?</p>
+                </div>
+                <div class="button-view">
+                    <button type="submit">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </EditForm> 
+
+        <div class="signin-view">
+            <div class="sign-container">
+                <p class="signin-text">Or sign in with</p>
+            </div>
+            <div class="signin-container">
+                <div class="icon-view">
+                    <img src="./images/facebook.png" />
+                </div>
+                <div class="icon-view">
+                    <img src="./images/mail.png" />
+                </div>
+                <div class="icon-view">
+                    <img src="./images/twitter.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</html>
